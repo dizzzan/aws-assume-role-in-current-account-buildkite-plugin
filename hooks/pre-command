@@ -14,7 +14,7 @@ main() {
 
   if [[ -n $role ]]; then
     echo "~~~ Assuming role $role ..."
-    assume_role "$role" "$build" "$duration"
+    assume_role "$role" "$buildnum" "$duration"
     if [[ -n $region ]]; then
       export AWS_REGION="$region"
       export AWS_DEFAULT_REGION="$region"
